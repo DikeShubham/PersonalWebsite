@@ -1,0 +1,707 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+/*----* start css for main page *----*/
+#mainPage{
+    position: relative;
+    /* display: none; */
+}
+
+
+/*_____PAGE==1_____*/
+/*----* start css for Home Page *----*/
+#homePage{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+/*----* start image *----*/
+#img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(./img/bgImg4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    opacity: 0.9s;
+    pointer-events: none;
+}
+/*----* end image page*----*/
+/*----* start css for Navigation Bar *----*/
+.navBar{
+    position: absolute;
+    width: 100%;
+    height: 4em;
+    display: grid;
+    align-items: center;
+    z-index: 8888;
+}
+.navBar ul{
+    position: absolute;
+    list-style: none;
+    display: flex;
+    right:.5em;
+}
+.navBar li{
+    margin-left:.9em;
+    height: 3em;
+    width: 6em;
+    padding: .9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+.navBar a{
+    padding: .3em .9em;
+    text-decoration: none;
+    color: #fff;
+    border-top: 2px solid rgb(238, 59, 93);
+    outline: none;
+    font-family: 'Old Standard TT', serif;
+    font-weight: 900;
+}
+a:hover{
+    /* border: 1px solid rgb(238, 59, 93); */
+    border-bottom: 1px solid rgb(238, 59, 93);
+    border-left: 1px solid rgb(238, 59, 93);
+    border-right: 1px solid rgb(238, 59, 93);
+
+    color:rgba(209, 93, 114, 0.912);    
+}
+/*----* Navigation Bar end *----*/
+/*----* start css for Text *----*/
+.textBox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}   
+.textBox > h1{
+    margin-top: .15em;
+    color: #fff;
+    font-size: 15em;
+    color: rgba(238, 59, 92, 0.665) ;
+    font-family: 'Concert One', cursive;    
+}
+.textBox > p{
+    color: #fff;
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.2em;
+}
+.textBox > h4{
+    font-size: 3em;
+    width: 10em;
+    word-wrap: break-word;
+    text-align: center;
+    font-family: 'Old Standard TT', serif;
+    line-height: .8em;
+    margin-top: .23em;
+    color: #fff;
+}
+/*----*End Text css *----*/
+/*--*--* End Home Page css *--*--*/
+
+
+
+/*_____PAGE==2_____*/
+/*----* Start css for servics page *----*/
+#servicePage{
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #EB3D62;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+/*----* Start css text *----*/
+.text{
+    width:25%;
+    height: 100%;
+    background-color: #D51F5C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* border: 1px solid #fff; */
+    overflow: hidden;
+}
+.text > p{
+    text-align: justify;
+    color: #fff;
+    font-size: 5em;
+    font-weight: 800;
+    /* border: 1px solid #fff; */
+}
+.text  p > span{
+    font-size: 2em;
+    font-family: 'Old Standard TT', serif;
+}
+.text > .headingText{
+    font-family: 'Montserrat Alternates', sans-serif;
+    position: absolute;
+    font-weight: 200;
+    top:50%;
+    transform: rotate(270deg);
+    font-size:3em;
+    width: 9em;
+    color: #fff;
+    padding: 0%;
+    margin: 0%;
+    /* border: 1px solid #fff; */
+    border-left: 5px solid #fff;
+    padding-left: .1em;
+}
+.headingText > h6{
+    line-height: 1.2em;
+    font-size: .5em;
+}
+.headingText > h3{
+    line-height: .7em;
+    text-transform: uppercase;
+}
+/*----* End text css*----*/
+/*----* Start css for things do *----*/
+.thingsDo{
+    /* border: 1px solid #fff; */
+    width: 70%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+.thingsDo > h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: justify;
+    font-size: 2em;
+    width: 15em;
+    margin-top: 3em;
+    font-weight: 100;
+    color: #fff;
+    margin-left: 2em;
+    padding: 0em;
+    /* border: 1px solid #fff; */
+}
+.serviceBox{
+    width: 100%;
+    height: 50%;
+    margin-top: 4em;
+    /* border: 1px solid #fff; */
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(3,auto);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    padding-left: 3em;
+}
+.serviceBox > .servic{
+    padding: 0%;
+    display: flex;
+    align-items: center;
+}
+.servic > i{
+    font-size: 4em;
+    color: #fff;
+    margin:0  .3em;
+    padding: 0%;
+    text-align: center;
+}
+.servic > .serDiv{
+    color: #fff;
+    align-items: center;
+}
+.serDiv > h3{
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 5em;
+    line-height: 1.4em;
+}
+.serDiv > p{
+    font-family: 'Old Standard TT', serif;
+    padding: 0%;
+    line-height: 1.3em;
+    word-spacing: .2em;
+}
+/*----* End things do css *----*/
+/*----* End css for servics page *----*/
+
+
+
+/*_____PAGE==3_____*/
+/*----* Start css for PortFolio *----*/
+#portFolio{
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #5469BC;
+    flex-direction: row;
+}
+.foliobox{
+    width:25%;
+    height: 100%;
+    background-color: #515EBC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* border: 1px solid #fff; */
+    overflow: hidden;
+}
+.foliobox > p{
+    text-align: justify;
+    color: #fff;
+    font-size: 5em;
+    font-weight: 800;
+    /* border: 1px solid #fff; */
+}
+.foliobox  p > span{
+    font-size: 2em;
+    font-family: 'Old Standard TT', serif;
+}
+.foliobox > .folioHeding{
+    font-family: 'Montserrat Alternates', sans-serif;
+    position: absolute;
+    font-weight: 200;
+    top: 50%;
+    transform: rotate(270deg);
+    font-size: 3em;
+    width: 9em;
+    color: #fff;
+    padding: 0%;
+    margin: 0%;
+    /* border: 1px solid #fff; */
+    border-left: 5px solid #fff;
+    padding-left: .1em;
+}
+.folioHeding > h6{
+    line-height: 1.2em;
+    font-size: .5em;
+}
+.folioHeding > h3{
+    padding: 0%;
+    line-height: .7em;
+    text-transform: uppercase;
+}
+/*---- Css for Work we do----*/
+.workDo{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,auto);
+    grid-gap: .8em;
+}
+.img > img{
+    width: 16em;
+    height: 14em;
+    overflow: hidden;
+    opacity: 0.6;
+}
+.img > img:hover{
+    opacity:1;
+    transform: scale(1.1);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+}
+/*---- end css for work we do----*/
+/*----* End css for PortFolio *----*/
+
+
+
+/*_____PAGE==4_____*/
+/*----*Css for about page *----*/
+#aboutPage{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+/*----*Css for information *----*/
+.aboutInfo{
+    width: 75%;
+    height: 100%;
+    background-color: #F7C457;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: .9em;
+}
+.extraText{
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 70%;
+    text-align: justify;
+    /* border: 1px solid #fff; */
+    font-size: 1.3em;
+    margin: .5em;
+    color: #fff;
+    line-height: 1em;
+}
+.extraBox{
+    width: 70%;
+    height: 100%;
+    /* border: 1px solid #fff;    */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.extraBox > img{
+    width:100%;
+    height: 25em;
+}
+.extraBox .aboutText{
+    color: #fff;
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-column-gap: .9em;
+    /* border: 1px solid red; */
+    height: 100%;
+    padding-top: .7em;
+}
+.textOne{
+    margin: .2em;
+    line-height: 1em;
+}   
+.textOne P > #span{
+    font-weight: 600;
+}
+.textOne P > .span{
+    font-weight: 600;
+}
+/*----*End Css for Information *----*/
+/*----*Css for About Heading *----*/
+.aboutBox{
+    width: 25%;
+    height: 100%;
+}
+#portFolio{
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #5469BC;
+    flex-direction: row;
+}
+.aboutBox{
+    width:25%;
+    height: 100%;
+    background-color: #F8D45C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* border: 1px solid #fff; */
+    overflow: hidden;
+}
+.aboutBox > p{
+    text-align: justify;
+    color: #fff;
+    font-size: 5em;
+    font-weight: 800;
+    /* border: 1px solid #fff; */
+
+}
+.aboutBox  p > span{
+    font-size: 2em;
+    font-family: 'Old Standard TT', serif;
+}
+.aboutBox > .aboutHeading{
+    font-family: 'Montserrat Alternates', sans-serif;
+    position: absolute;
+    font-weight: 200;
+    top: 50%;
+    transform: rotate(270deg);
+    font-size: 3em;
+    width: 9em;
+    color: #fff;
+    padding: 0%;
+    margin: 0%;
+    /* border: 1px solid #fff; */
+    border-left: 5px solid #fff;
+    padding-left: .1em;
+}
+.aboutHeading > h6{
+    line-height: 1.2em;
+    font-size: .5em;
+}
+.aboutHeading > h3{
+    padding: 0%;
+    line-height: .7em;
+    text-transform: uppercase;
+}
+/*----* End css for about page *----*/
+
+
+
+/*_____PAGE==5_____*/
+/*----* Css for Pricing Page *----*/
+#pricingPage{
+    width: 100vw;
+    height: 100vh;
+    background-color: #101011;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+/*----* Css for Text  *----*/
+.pricingText{
+    width: 80%;
+    height: 20%;
+    display: flex;
+}
+.pricingTextOne{
+    width: 70%;
+    font-size: 2em;
+    display: grid   ;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+.pricingTextTwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    word-wrap: break-word;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: .9em;
+    width: 30%;
+}
+/*----* End css for Text *----*/
+/*----*css for skill status box*----*/
+.pricingStatus{
+    width: 80%;
+    height: 75%;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(1,auto);
+    grid-column-gap: 2em;
+    justify-content: space-between;
+}
+.pricingStatus .box{
+    width: 18em;
+    height: 100%;
+    background-color: #000;
+}
+.box .head{
+    height: 20%;
+    text-transform: uppercase;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+/* Basic Plan */
+.box #basic{
+    background-color: #C240A2;
+}
+.pricingBody #basicBtn{
+    border: 2px solid #C240A2;
+    border-radius: .8em;
+}
+#basicBtn:hover{
+    background-color: #C240A2;
+}
+/* __-__ */
+/* Advanced Plan */
+.box #advanced{
+    background-color: #C20008;
+}
+.pricingBody #advancedBtn{
+    border: 2px solid #C20008;
+    border-radius: .8em;
+}
+#advancedBtn:hover{
+    background-color: #C20008;
+}
+/* __-__ */
+/* Expert Plan */
+.box #expert{
+    background-color: #065699;
+}
+.pricingBody #expertBtn{
+    border: 2px solid #065699;
+    border-radius: .8em;
+}
+#expertBtn:hover{
+    background-color: #065699;
+}
+/* __-__ */
+.box .pricingBody{
+    height: 80%;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(6,auto);
+}
+.pricingBody h6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.6em;
+}
+.pricingBody h6 > span{
+    font-family: 'Old Standard TT', serif;
+    font-size: .5em;
+    text-transform: capitalize;
+}
+.pricingBody p{
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(94, 91, 91);
+}
+.pricingBody .btn{
+    width: 10em;
+    height: 4em;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+/*----*End for pricing status box*----*/
+/*----*End Css for Pricing Page *----*/
+
+
+
+/*_____PAGE==6_____*/
+/*----* Css for Skill Page *----*/
+#skillPage{
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #5469BC;
+    flex-direction: row;
+}
+/*--Css for skill status page--*/
+.skillStatus{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skillStatus .skillText{
+    /* border: 1px solid #fff; */
+    width: 80%;
+    height: 15%;
+    font-size: 2em;
+    margin: 1em;
+    color: #fff;
+    font-family: 'Old Standard TT', serif;
+    word-wrap: break-word;
+    text-align: center;
+}
+.skills{
+    /* border: 1px solid #fff; */
+    width: 80%;
+    height:80%;
+    display: grid;
+    grid-template-rows: repeat(4,auto);
+    align-items: center;
+}
+.skills .showingRatio{
+    /* border: 1px solid #fff; */
+    display:flex;
+    align-items: center;
+    padding-left: 1.5em;
+}
+.skills h2{
+    color: #fff;
+    font-size: 4em;
+    display: inline-block;
+    margin-right: .8em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.skills .ratio{
+    height: 100%;
+    width: 60%;
+    /* border: 1px solid #fff; */
+}
+.ratio h6{
+    font-size: 1.5em;
+    margin: .2em 0em;
+    color: #fff;
+    font-family: 'Old Standard TT', serif;
+}
+.currentRatio{
+    width: 100%;
+    height: .3em;
+    border: 1px solid #fff;
+    border-radius: 5em;
+}
+.ratioProgress{
+    width: 70%;
+    height: 100%;
+    background-color: #fff;
+}
+/*--End for skill status page--*/
+/*--For Individual progress bar--*/
+/* Design Bar */
+.currentRatio #designBar{
+    width: 75%;
+    height: 100%;
+    background-color: #fff;
+    animation: goWay 0.7s forwards cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+/* php Bar */
+.currentRatio #phpBar{
+    width: 40%;
+    height: 100%;
+    background-color: #fff;
+}
+/* Marketing Bar*/
+.currentRatio #marketingBar{
+    width: 60%;
+    height: 100%;
+    background-color: #fff;
+}
+/* Creativity Bar */
+.currentRatio #creativityBar{
+    width: 90%;
+    height: 100%;
+    background-color: #fff;
+}
+/* Graphic Design Bar */
+.currentRatio #graphicBar{
+    width: 80%;
+    height: 100%;
+    background-color: #fff;
+}
+    /*--End progress bar--*/
+
+/*--End Css for skill status page--*/
+/*----*End Css for Skill Page *----*/
+
+
+/*__+_+__*Main Page End *__+_+__*/
